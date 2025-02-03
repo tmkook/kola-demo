@@ -1,0 +1,2 @@
+const command = require('kola/command');
+command.loader().parse();
