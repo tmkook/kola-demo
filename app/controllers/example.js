@@ -1,7 +1,8 @@
 const controller = require('kola/controller');
+const view = require('kola/view');
 
 module.exports = class example extends controller {
     index() {
-        return 'hello world';
+        return view.file('welcome');
     }
 }
