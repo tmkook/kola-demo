@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "kola": "github:tmkook/kola",
-    "koa-bodyparser": "^4.4.1",
-    "koa-static": "^5.0.0",
     "sqlite3": "^5.1.7",
     "sutando": "^1.7.1"
   },

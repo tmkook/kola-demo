@@ -1,7 +1,7 @@
 module.exports = {
     koa: {
-        env: 'development',
-        keys: ['your-cookie-secret'],
+        env: process.env.APP_ENV ?? 'development',
+        keys: [process.env.APP_KEY ?? 'your-secret-key'],
         proxy: true,
         subdomainOffset: 2,
         proxyIpHeader: 'X-Forwarded-For',
@@ -23,7 +23,7 @@ module.exports = {
         store: null,
     },
     logger: {
-        level: "info",
+        level: process.env.APP_LOG ?? 'info',
         silent: false,
         transports: [
             { filename: process.cwd() + "/storage/logs/kola.log", maxSize: '50m', maxFiles: 7, zippedArchive: true }
