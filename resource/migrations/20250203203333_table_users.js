@@ -15,7 +15,7 @@ module.exports = class users {
             table.string('phone', 32);
             table.string('email', 32);
             table.string('username', 32);
-            table.string('password', 32);
+            table.string('password');
             table.timestamp('email_at').nullable();
             table.timestamp('phone_at').nullable();
             table.timestamps();
