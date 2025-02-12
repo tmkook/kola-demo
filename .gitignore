@@ -1,7 +1,8 @@
 .env
 .DS_Store
+package-lock.json
+/public/assets
+/public/uploads
 /storage/logs/*
-/storage/statics/*
 /storage/uploads/*
 /node_modules
-package-lock.json
