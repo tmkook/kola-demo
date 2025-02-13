@@ -9,8 +9,8 @@
 |--------------------------------------------------------------------------
 |
 */
-const router = require('kola/router');
+const { router } = require('kola');
 
 // Define routes
 router.get('/', router.action('example', 'index'));
-router.get('/auth',router.next('auth'), router.action('example', 'index'));
+router.get('/auth', router.next('auth'), router.action('example', 'index'));

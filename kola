@@ -1,2 +1,2 @@
-const command = require('kola/command');
-command.loader().parse();
+const { program } = require('kola');
+program.loader().parse();

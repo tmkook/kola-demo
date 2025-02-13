@@ -1,6 +1,4 @@
-const app = require('kola/app');
-const router = require('kola/router');
-const program = require('kola/command');
+const { app, router, program } = require('kola');
 
 program.command('serve')
     .description('Start server')
